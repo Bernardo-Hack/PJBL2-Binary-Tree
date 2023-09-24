@@ -15,31 +15,32 @@ As funcionalidades implementadas foram:
 - [x] busca 
 - [x] remoção 
 - [x] impressão
+- [ ] AVL
 
 ### Sobre cada Funcionalidade
 #### Inserção
 Você pode inserir os valores por código de acordo com as regras da ABB.
 
-<img src="" width="300px;" alt="Código inserindo valor"> 
-<img src="" width="300px;" alt="Valor inserido"> 
+<img src="https://github.com/Bernardo-Hack/PJBL2-Binary-Tree/blob/main/prints/insert%20pt.1.png" width="300px;" alt="Código inserindo valor"> 
+<img src="https://github.com/Bernardo-Hack/PJBL2-Binary-Tree/blob/main/prints/insert%20pt.2.png" width="300px;" alt="Valor inserido"> 
 
 #### Busca
 Você pode buscar o valor informado por código, recebendo o retorno verdadeiro caso o valor seja encontrado e falso caso não seja.
 
-<img src="" width="300px;" alt="Código buscando valor"> 
-<img src="" width="300px;" alt="Valor buscado"> 
+<img src="https://github.com/Bernardo-Hack/PJBL2-Binary-Tree/blob/main/prints/search%20pt.1.png" width="300px;" alt="Código buscando valor"> 
+<img src="https://github.com/Bernardo-Hack/PJBL2-Binary-Tree/blob/main/prints/search%20pt.2.png" width="300px;" alt="Valor buscado"> 
 
 #### Remoção
-Você pode remover o valor informado por código.
+Você pode remover o valor informado por código, recebendo retorno de confirmação.
 
-<img src="" width="300px;" alt="Código removendo valor"> 
-<img src="" width="300px;" alt="Valor removido"> 
+<img src="https://github.com/Bernardo-Hack/PJBL2-Binary-Tree/blob/main/prints/delete%20pt.1.png" width="300px;" alt="Código removendo valor"> 
+<img src="https://github.com/Bernardo-Hack/PJBL2-Binary-Tree/blob/main/prints/delete%20pt.2.png" width="300px;" alt="Valor removido"> 
 
 #### Impressão
 Você pode imprimir os valores no formato de árvore no console na horizontal. 
 
-<img src="" width="300px;" alt="Código imprimindo árvore"> 
-<img src="" width="300px;" alt="Árvore impressa"> 
+<img src="https://github.com/Bernardo-Hack/PJBL2-Binary-Tree/blob/main/prints/insert%20pt.1.png" width="300px;" alt="Código imprimindo árvore"> 
+<img src="https://github.com/Bernardo-Hack/PJBL2-Binary-Tree/blob/main/prints/insert%20pt.2.png" width="300px;" alt="Árvore impressa"> 
 
 
 ## 🤝 Colaboradores
