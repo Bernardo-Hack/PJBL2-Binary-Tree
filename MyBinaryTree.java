@@ -75,6 +75,7 @@ public class MyBinaryTree {
         deleteRecursion(this.root, data);
     }
     
+    // Recursividade da função de delete
     MyNode deleteRecursion(MyNode node, int data) {
         if (node == null) {
             return node;
@@ -82,7 +83,7 @@ public class MyBinaryTree {
         }
         if (data < node.data) {
             node.leftNode = deleteRecursion(node.leftNode, data);
-            return root;
+            return node;
 
         } else if (data > node.data) {
             node.rightNode = deleteRecursion(node.rightNode, data);
@@ -104,7 +105,7 @@ public class MyBinaryTree {
                     succ = succ.leftNode;
                 }
                 
-                if (succParent != root) {
+                if (succParent != node) {
                     succParent.leftNode = succ.rightNode;
                     
                 } else {
