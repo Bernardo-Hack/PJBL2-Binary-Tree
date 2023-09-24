@@ -113,6 +113,8 @@ public class MyBinaryTree {
                     
                 }
                 node.data = succ.data;
+
+                System.out.println("O valor " + data + " foi removido com sucesso.");
                 
                 return node;
             }
