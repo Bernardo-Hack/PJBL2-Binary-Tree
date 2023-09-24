@@ -8,7 +8,7 @@ public class TreeTest {
         tree1.insertData(20);
         tree1.insertData(12);
 
-        System.out.println(tree1.getData("1.2.2.2.1"));
+        System.out.println(tree1.searchTree(10));
         // Print deve ser 12
     }
 }
