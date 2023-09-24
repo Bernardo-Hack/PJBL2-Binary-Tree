@@ -72,7 +72,7 @@ public class MyBinaryTree {
 
     // Função de deletar um dado da Árvore
     void deleteData(int data) {
-        deleteRecursion(this.root, data);
+        this.root = deleteRecursion(this.root, data);
     }
     
     // Recursividade da função de delete
