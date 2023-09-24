@@ -1,0 +1,42 @@
+
+    // Função para encontrar dados na Árvore seguindo o sistema de coordenadas (ex.: 1.2.2.1)
+    int getData(String pos) {
+        MyNode returnNode = this.getNodeByPos(pos);
+
+        if (returnNode == null) {
+            System.out.println("Posição especificada não encontrada!");
+            return 0;
+
+        } else {
+            return returnNode.data;
+
+        }
+    }
+
+    // Parte recursiva da função de busca
+    private MyNode getNodeByPos(String pos) {
+        if (pos == "1") {
+            return this.root;
+
+        } else {
+            String auxStr = pos.substring(2, pos.length());
+            char[] coordinates = auxStr.toCharArray();
+            MyNode node = this.root;
+
+            for (char coord : coordinates) {
+                if (node == null) {
+                    return null;
+
+                } else {
+                    if (coord == '1') {
+                        node = node.leftNode;
+                        
+                    } else if (coord == '2') {
+                        node = node.rightNode;
+                    }
+                }
+            }
+            return node;
+        }
+    }
+
