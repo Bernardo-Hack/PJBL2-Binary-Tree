@@ -126,6 +126,7 @@ public class MyBinaryTree {
     void print2D() {
         // Pass initial space count as 0
         print2DUtil(this.root, 0);
+        System.out.println("");
     }
 
     private void print2DUtil(MyNode root, int space) {
