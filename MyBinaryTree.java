@@ -1,5 +1,4 @@
 public class MyBinaryTree {
-    static final int COUNT = 10; // Variável da função de print
     private MyNode root;
 
     // Subclasse dos nós da Árvore
@@ -73,48 +72,50 @@ public class MyBinaryTree {
 
     // Função de deletar um dado da Árvore
     void deleteData(int data) {
-        this.root = deleteRecursion(this.root, data);
+        deleteRecursion(this.root, data);
     }
-
-    // Parte recursiva da função de delete
-    private MyNode deleteRecursion(MyNode node, int data) {
+    
+    MyNode deleteRecursion(MyNode node, int data) {
         if (node == null) {
-            return null;
-        }
+            return node;
 
+        }
         if (data < node.data) {
-            return searchRecursion(node.leftNode, data);
-            
+            node.leftNode = deleteRecursion(node.leftNode, data);
+            return root;
+
         } else if (data > node.data) {
-            return searchRecursion(node.rightNode, data);
-            
+            node.rightNode = deleteRecursion(node.rightNode, data);
+            return node;
+
         } else {
             if (node.leftNode == null) {
                 return node.rightNode;
-
+                
             } else if (node.rightNode == null) {
                 return node.leftNode;
+                
+            } else {
+                MyNode succParent = node;
+                MyNode succ = node.rightNode;
 
+                while (succ.leftNode != null) {
+                    succParent = succ;
+                    succ = succ.leftNode;
+                }
+                
+                if (succParent != root) {
+                    succParent.leftNode = succ.rightNode;
+                    
+                } else {
+                    succParent.rightNode = succ.rightNode;
+                    
+                }
+                node.data = succ.data;
+                
+                return node;
             }
-
-            node.data = minValue(node);
-
-            root.rightNode = deleteRecursion(node.rightNode, root.data);
         }
-
-        return node;
-    }
-
-    // Função para encontrar o menor valor na Árvore
-    private int minValue(MyNode node) {
-        int minValue = node.data;
-
-        while (node.leftNode != null) {
-            minValue = node.leftNode.data;
-            node = node.leftNode;
-
-        }
-        return minValue;
     }
 
     // – = – Função de Print pega da internet 🤙 – = –
@@ -130,7 +131,7 @@ public class MyBinaryTree {
             return;
  
         // Increase distance between levels
-        space += COUNT;
+        space += 10;
  
         // Process right child first
         print2DUtil(root.rightNode, space);
@@ -138,7 +139,7 @@ public class MyBinaryTree {
         // Print current node after space count
         System.out.print("\n");
 
-        for (int i = COUNT; i < space; i++)
+        for (int i = 10; i < space; i++)
             System.out.print(" ");
 
         System.out.print(root.data + "\n");
