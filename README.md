@@ -11,7 +11,7 @@
 
 As funcionalidades implementadas foram:
 
-- [x] inserção 
+- [X] inserção 
 - [x] busca 
 - [x] remoção 
 - [x] impressão
