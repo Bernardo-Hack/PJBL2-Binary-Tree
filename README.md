@@ -4,7 +4,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/Bernardo-Hack/PJBL2-Binary-Tree?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Bernardo-Hack/PJBL2-Binary-Tree?style=for-the-badge)
 
-#PJBL 2 - Árvore Binária de Busca
+# PJBL 2 - Árvore Binária de Busca
 > PjBL2 da matéria de Resolução de Problemas Estruturados em Computação.
 > Nesse projeto foi implementado uma Árvore Binária de Busca (não balanceada)
 ### Funcionalidades
